@@ -8,6 +8,6 @@ public class food extends item{
 		return true;
 	}
 	public void look(){
-		System.out.print(name + " can be used to gain energy.");
+		System.out.println(name + " can be used to gain energy.");
 	}
 }
