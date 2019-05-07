@@ -1,17 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
 public class player {
-	scanner myScanner= new Scanner (System.in);
-	System.out.println("Enter Player Name:");
-	Scanner enterScanner = new Scanner (System.in);
-	int playerHP;
-	// moving player code
-	public void move(int row, int column) {
-		this.row = row;
-		this.column= column;
+	private final String name;
+	private Room currRoom;
+	private List<Item> inventory;
 
+	public Player(String name) {
+		this.name=name;
 	}
-
-	public static playerSetup() {
-	
-		
+	public String getName() {
+		return name;
 	}
-}
+	public List<Item> getInventory(){
+		return inventory;
+	}
+	public Room getCurrRoom() {
+		return currRoom;
+	}
+	public void setCurrRoom(Room room) {
+		currRoom= room;
+	}
+	}
