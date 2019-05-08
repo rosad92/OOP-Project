@@ -4,6 +4,6 @@ public class fuel extends item{
 		return true;
 	}
 	public void look(){
-		System.out.println("Fuel can be used to get the ship off the ground")
+		System.out.println("Fuel can be used to get the ship off the ground");
 	}
 }
