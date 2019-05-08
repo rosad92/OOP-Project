@@ -1,4 +1,4 @@
-package itemplacement;
+
 
 public class ItemPlacement {
 	
