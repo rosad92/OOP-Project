@@ -17,6 +17,7 @@ public class Start{
 		System.out.println("Hello Commander, " + " "+ name +" "+ " Let's go home");
 		
 		// tiny bit more explanation
+		//tiny bit more explanation
 		//print about starting room
 		
 		do{
