@@ -1,4 +1,4 @@
-public class ShipParts extends items{
+public class ShipParts extends item{
 	String name;
 	ShipParts(String name){
 		this.name = name;
