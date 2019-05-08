@@ -16,7 +16,7 @@ public class Start{
 				+ "ship and planet to fix the A.S.S and get back home.");
 		System.out.println("Hello Commander, " + " "+ name +" "+ " Let's go home");
 		
-		// tiny bit more explainaiton
+		// tiny bit more explanation
 		//print about starting room
 		
 		do{
@@ -50,8 +50,7 @@ public class Start{
 				System.out.print("That is not a valid command");
 			}
 				
-				
-			}
+			
 			
 			}while (alive == true);
 			
