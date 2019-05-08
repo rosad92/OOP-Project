@@ -16,8 +16,11 @@ public class Start{
 				+ "ship and planet to fix the A.S.S and get back home.");
 		System.out.println("Hello Commander, " + " "+ name +" "+ " Let's go home");
 		
+<<<<<<< HEAD
 		// tiny bit more explanation
 		//tiny bit more explanation
+=======
+>>>>>>> 158e0232f831028cacf228453fe4acb42dc83b56
 		//print about starting room
 		
 		do{
