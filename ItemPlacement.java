@@ -9,7 +9,7 @@ public class ItemPlacement {
 	public void printroomName() {
 		
 	}
-public void look() {
+	public void look() {
 	
-}
+	}
 }
