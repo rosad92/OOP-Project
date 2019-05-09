@@ -27,4 +27,5 @@ public class Room {
 	}
 	public void setvisited (boolean visited){
 		this.visited = visited;		
+	}
 }
