@@ -11,7 +11,7 @@ public class ShipParts extends item{
 		return name;
 	}
 	public boolean gethasPart() {
-		return haspart;
+		return hasPart;
 	}
 	public boolean gethasUsed() {
 		return hasUsed;
