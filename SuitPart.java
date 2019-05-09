@@ -9,6 +9,11 @@ public class SuitPart extends item{
 		//this will add to a total count of suitparts on
 		return true;
 	}
+	public void pickup(){
+		if (hasPart == false){
+			hasPart = true;
+		}
+	}
 	public void look(){
 		System.out.println(name + "will keep you breathing outside the ship.");
 	}

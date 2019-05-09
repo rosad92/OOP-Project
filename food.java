@@ -12,6 +12,11 @@ public class food extends item{
 		//if hasUsed is false, change hasUsed to true, return true
 		return true;
 	}
+	public void pickup(){
+		if(hasFood == false){
+			hasFood=true;
+		}
+	}
 	public void look(){
 		System.out.println(name + " can be used to gain energy.");
 	}

@@ -9,6 +9,11 @@ public class tool extends item{
 		//tools will have specific uses
 		return true;
 	}
+	public void pickup(){
+		if (hasTool == false){
+			hasTool = true;
+		}
+	}
 	public void look(){
 		System.out.println(name + " can be used to repair the ship.");
 	}

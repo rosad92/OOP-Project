@@ -3,7 +3,8 @@ public class Adventure {
 	private Room [] map;
 	int currentLocation;
 	String nextLine= "/n";
-	Adventure(){
+	Player spaceMan;
+	public Adventure(String name){
 		currentLocation=0;
 		map = new Room[10];
 		map[0]= new Room("Command Center");
@@ -16,6 +17,8 @@ public class Adventure {
 		map[7]= new Room("Dunes");
 		map[8]= new Room("Cave");
 		map[9]= new Room("Shelter");
+		
+		spaceMan = new Player(name);
 		}
 		
 // 1 is north, 2 is east		
@@ -204,5 +207,43 @@ public class Adventure {
 				currentLocation=6;}
 		}
 	}
-	
+	public void pickup(){
+		if (currentLocation == 0){
+			spaceMan.getItem(0).pickup();
+		}
+		else if (currentLocation ==1){
+			spaceMan.getItem(1).pickup();
+			spaceMan.getItem(2).pickup();
+		}
+		else if(currentLocation ==2){
+			spaceMan.getItem(3).pickup();
+			spaceMan.getItem(4).pickup();
+		}
+		else if(currentLocation ==3){
+			spaceMan.getItem(5).pickup();
+			spaceMan.getItem(6).pickup();
+		}
+		else if(currentLocation ==4){
+			spaceMan.getItem(7).pickup();
+		}
+		else if(currentLocation ==5){
+			spaceMan.getItem(8).pickup();
+		}
+		else if(currentLocation ==6){
+			spaceMan.getItem(9).pickup();
+			spaceMan.getItem(10).pickup();
+		}
+		else if(currentLocation ==7){
+			spaceMan.getItem(11).pickup();
+			spaceMan.getItem(12).pickup();
+		}
+		else if(currentLocation ==8){
+			spaceMan.getItem(13).pickup();
+			spaceMan.getItem(14).pickup();
+		}
+		else if(currentLocation ==9){
+			spaceMan.getItem(15).pickup();
+			spaceMan.getItem(16).pickup();
+		}
+	}
 }

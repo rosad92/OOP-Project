@@ -11,6 +11,11 @@ public class fuel extends item{
 		//if hasUsed is false, change to true, return false
 		return true;
 	}
+	public void pickup(){
+		if (hasFuel == false){
+			hasFuel = true;
+		}
+	}
 	public void look(){
 		System.out.println("Fuel can be used to get the ship off the ground");
 	}

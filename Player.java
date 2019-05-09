@@ -38,6 +38,9 @@ public class Player {
 	public String getName() {
 		return name;
 	}
+	public item getItem(int i){
+		return inventory[i];
+	}
 	
 	
 

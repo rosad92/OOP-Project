@@ -13,6 +13,11 @@ public class ShipParts extends item{
 		//if it is not a location on the ship, or if hasUsed is already true, return false;
 		return false;
 	}
+	public void pickup(){
+		if (hasPart == false){
+			hasPart = true;
+		}
+	}
 	public void look(){
 		System.out.println(name + "is a piece of the ship that broke off in the crash.");
 	}
