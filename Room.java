@@ -6,6 +6,11 @@ public class Room {
 	boolean hasitem;
 	boolean visited;
 	//this needs a constructor for name and to set defaults for the boolean
+	public Room(String name){
+		roomname = name;
+		hasitem = false;
+		visited = false; 
+	}
 	
 	public String getroomname() {
 		return roomname;

@@ -1,4 +1,4 @@
-public class tool{
+public class tool extends item{
 	private String name;
 	private boolean hasTool;
 	tool(String name){

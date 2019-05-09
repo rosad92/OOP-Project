@@ -1,9 +1,7 @@
 public class fuel extends item{
-	private String name;
 	private boolean hasFuel;
 	private boolean hasUsed;
-	public fuel(String name){
-		this.name = name;
+	public fuel(){
 		hasFuel = false;
 		hasUsed =false;
 	}

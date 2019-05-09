@@ -6,17 +6,16 @@ public class Adventure {
 	Adventure(){
 		currentLocation=0;
 		map = new Room[10];
-		map[0]= "Command Center";
-		map[1]= "Sleeping Quarters";
-		map[2]= "Communal Area";
-		map[3]= "Cargo Bay";
-		map[4]= "Engine Room";
-		map[5]= "Air-Lock";
-		map[6]= "Crater";
-		map[7]= "Dunes";
-		map[8]= "Cave";
-		map[9]= "Shelter";
-		//this will need to get edited once we have a room constructor
+		map[0]= new Room("Command Center");
+		map[1]= new Room ("Sleeping Quarters");
+		map[2]= new Room ("Communal Area");
+		map[3]= new Room ("Cargo Bay");
+		map[4]= new Room ("Engine Room");
+		map[5]= new Room("Air-Lock");
+		map[6]= new Room("Crater");
+		map[7]= new Room("Dunes");
+		map[8]= new Room("Cave");
+		map[9]= new Room("Shelter");
 		}
 		
 // 1 is north, 2 is east		
