@@ -130,14 +130,70 @@ public class Adventure {
 				currentlocation=5;}
 			else if (m==3){
 				System.out.println("Leaving Space Ship" +nextLine
-						  +"Weclome to the Crater, I see a landing gear and tools!");
+						  +"Welcome to the Crater, I see a landing gear and tools!");
 				currentlocation=6;}
 			else if (m==4){
 				System.out.println("You've entered the cargo bay."+newLine
 					+ "I see food and the shuttle's wing! Pick it up!");
 				currentlocation=3;}
 					
-			
+			else if (currentLocation==6){ // Crater
+				if(m==1)
+				System.out.println("You've entered the Dunes, I see a tool and the landing gear!");
+				currentlocation=7;}		
+			else if(m==2)
+				System.out.println("You've entered the shelter, I see fuel and food!");
+				currentlocation=9;}
+			else if(m==3)
+				System.out.println("You've entered the Air-Lock."+newLine
+					+ "I see the rest of the space suit, suit up before you suffocate.");
+				currentlocation=5;}
+			else if(m==4)
+				System.out.println("Invalid entry, please try again.");
+				currentlocation=6;}
+		
+		else if (currentLocation==7){ // Dunes
+				if(m==1)
+				System.out.println("Invalid entry, please try again");
+				currentlocation=7;}
+			else if(m==2)
+				System.out.println("You've entered the Cave, I spot a Tool and the Wheel!");
+				currentlocation=8;}
+			else if(m==3)
+				System.out.println("Invalid entry, please try again.");
+				currentlocation=7;}
+			else if(m==4)
+				System.out.println("Welcome to the Crater, I see a landing gear and tools!");
+				currentlocation=6;}
+
+		else if (currentLocation==8){ // Cave
+				if(m==1)
+				System.out.println("Invalid entry, please try again");
+				currentlocation=8;}
+			else if(m==2)
+				System.out.println("Invalid entry, please try again");
+				currentlocation=8;}
+			else if(m==3)
+				System.out.println("You've enther the Shelter, I see fuel and food in the distance!");
+				currentlocation=9;}
+			else if(m==4)
+				System.out.println("You've entered the Dunes, I see a tool and the landing gear!");
+				currentlocation=7;}
+
+		else if (currentLocation==7){ // Shelter
+				if(m==1)
+				System.out.println("You've entered the Cave, I spot a Tool and the Wheel!");
+				currentlocation=8;}
+			else if(m==2)
+				System.out.println("Invalid entry, please try again.");
+				currentlocation=9;}
+			else if(m==3)
+				System.out.println("Invalid entry, please try again.");
+				currentlocation=8;}
+			else if(m==4)
+				System.out.println("Welcome to the Crater, I see a landing gear and tools!");
+				currentlocation=6;}
+
 		//the rest of this constructor will fill out the specifics of all of the rooms in the array
 	}
 	public Room getLocation(int location){
