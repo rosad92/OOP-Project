@@ -7,6 +7,24 @@ public class ShipParts extends item{
 		hasPart = false;
 		hasUsed=false;
 	}
+	public String getname (){
+		return name;
+	}
+	public boolean gethasPart() {
+		return haspart;
+	}
+	public boolean gethasUsed() {
+		return hasUsed;
+	}
+	public void setname (String name){
+		this.name = name;
+	}
+	public void sethasPart(boolean hasPart){
+		this.hasPart = hasPart;
+	}
+	public void sethasUsed (boolean hasUsed){
+		this.hasUsed = hasUsed;		
+        }
 	public boolean use(){
 		// edit this so it takes an integer for the location
 		//if it is any of the locations on the ship, (as in the array in the adventure class) change hasUsed to true, and return true;
