@@ -5,6 +5,20 @@ public class SuitPart extends item{
 		this.name = name;
 		hasPart = false;
 	}
+	public String getname (){
+		return name;
+	}
+	public boolean gethasPart() {
+		return haspart;
+	}
+	
+	public void setname (String name){
+		this.name = name;
+	}
+	public void sethasPart(boolean hasPart){
+		this.hasPart = hasPart;
+	}
+		
 	public boolean use(){
 		//this will add to a total count of suitparts on
 		return true;
