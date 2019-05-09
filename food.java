@@ -12,4 +12,7 @@ public class food extends item{
 	public void look(){
 		System.out.println(name + " can be used to gain energy.");
 	}
+	public String getName(){
+		return name;
+	}
 }
