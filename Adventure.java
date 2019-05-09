@@ -28,7 +28,6 @@ public class Adventure {
 			{
 				System.out.println("----------------------------------------------------------------------");
 			}
-			String newLine = System.getProperty("line.separator");
 		}
 		
 		
