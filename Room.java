@@ -1,10 +1,11 @@
 
 
-public class ItemPlacement {
+public class Room {
 	
 	String roomname;
 	boolean hasitem;
 	boolean visited;
+	//this needs a constructor for name and to set defaults for the boolean
 	
 	public String getroomname() {
 		return roomname;

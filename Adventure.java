@@ -4,7 +4,6 @@ public class Adventure {
 	Adventure(){
 		int currentLocation=0;
 		map = new Room[10];
-		public void Rooms(){
 		map[0]= "Command Center";
 		map[1]= "Sleeping Quarters";
 		map[2]= "Communal Area";
@@ -15,6 +14,7 @@ public class Adventure {
 		map[7]= "Dunes";
 		map[8]= "Cave";
 		map[9]= "Shelter";
+		//this will need to get edited once we have a room constructor
 		}
 		
 // 1 is north, 2 is east		
