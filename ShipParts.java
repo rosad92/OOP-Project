@@ -1,7 +1,9 @@
 public class ShipParts extends item{
-	String name;
+	private String name;
+	private boolean hasPart;
 	ShipParts(String name){
 		this.name = name;
+		hasPart = false;
 	}
 	public boolean use(){
 		//if location is right to use them, use

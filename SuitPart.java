@@ -1,7 +1,9 @@
 public class SuitPart extends item{
-	String name;
+	private String name;
+	private boolean hasPart;
 	SuitPart(String name){
 		this.name = name;
+		hasPart = false;
 	}
 	public boolean use(){
 		//this will add to a total count of suitparts on
