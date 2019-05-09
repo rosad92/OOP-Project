@@ -205,12 +205,6 @@ public class Adventure {
 				System.out.println("Welcome to the Crater, I see a landing gear and tools!");
 				currentLocation=6;}
 		}
-		}
-
-
-	public Room getLocation(int location){
-		return map[location];
-		// this should return the specific room so you can call methods from the Room class
 	}
 	
 }
