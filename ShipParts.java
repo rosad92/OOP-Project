@@ -25,16 +25,16 @@ public class ShipParts extends item{
 	public void sethasUsed (boolean hasUsed){
 		this.hasUsed = hasUsed;		
         }
-	public boolean use(int currentlocation){
+	public boolean use(){
 		//we've gotta edit this because abstraction
 		// edit this so it takes an integer for the location
-		if( currentlocation > 0 && currentlocation <= 9 ) {
+		if(hasUsed = false) {
 			hasUsed = true;
 			return true;
 		}
 		//if it is any of the locations on the ship, (as in the array in the adventure class) change hasUsed to true, and return true;
 		else {
-		//if it is not a location on the ship, or if hasUsed is already true, return false;
+			//if it is not a location on the ship, or if hasUsed is already true, return false;
 		return false;
 		}
 	}

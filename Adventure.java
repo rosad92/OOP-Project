@@ -245,4 +245,5 @@ public class Adventure {
 	public Player getPlayer(){
 		return spaceMan;
 	}
+
 }
