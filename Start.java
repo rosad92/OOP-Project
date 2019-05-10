@@ -44,7 +44,7 @@ public class Start{
 					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas() &&
 							adventure.getPlayer().getItem(8).getHas()){
 						//this needs to be edited for polymorphism issues
-					   alive=false;ss
+					   alive=false;
 					}
 				}
 				adventure.move(3);
