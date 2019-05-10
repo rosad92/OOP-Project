@@ -66,7 +66,7 @@ System.out.println("You have entered the planet without a space suit or flashlig
 			case ("look"):
 				// look
 				break;
-			case ("blast off"):
+			case ("blastoff"):
 				//leave
 				System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
 						   + "See you soon Commander.");
