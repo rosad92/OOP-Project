@@ -159,7 +159,7 @@ public class Adventure {
 				System.out.println("You've entered the Air-Lock."+nextLine
 					+ "I see the rest of the space suit, suit up before you suffocate.");
 				currentLocation=5;}
-			else {
+			else if(m==4){
 				System.out.println("Invalid entry, please try again.");
 				currentLocation=6;}
 		}
