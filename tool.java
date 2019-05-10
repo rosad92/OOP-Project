@@ -1,13 +1,23 @@
 public class tool extends item{
 	private String name;
 	private boolean hasTool;
+	private boolean hasUsed;
 	tool(String name){
 		this.name = name;
 		hasTool = false;
+		hasUsed= false;
 	}
 	public boolean use(){
 		//tools will have specific uses
-		return true;
+		if(hasUsed == true){
+			return false;
+		}
+		else if(hasTool==true){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 	public void pickup(){
 		if (hasTool == false){
