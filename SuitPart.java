@@ -1,8 +1,10 @@
 public class SuitPart extends item{
 	private String name;
 	private boolean hasPart;
+	private boolean hasUsed;
 	SuitPart(String name){
 		this.name = name;
+		hasUsed = false;
 		hasPart = false;
 	}
 	public String getname (){
@@ -20,8 +22,16 @@ public class SuitPart extends item{
 	}
 		
 	public boolean use(){
-		//todo
-		return true;
+		if(hasUsed == true){
+			return false;
+		}
+		else if(hasPart==true){
+			return true;
+		}
+		else{
+			return false;
+		}
+		
 	}
 	public void pickup(){
 		if (hasPart == false){
