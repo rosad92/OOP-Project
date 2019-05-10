@@ -29,11 +29,13 @@ public class food extends item{
 		if(hasUsed == true) {
 			return false;
 		}
-		else {
+		else if(hasfood == true){
 			hasUsed = true;
 			return true;
 		}
-			
+		else {
+		return false;
+		}
 		//if hasUsed is true, return false
 		//if hasUsed is false, change hasUsed to true, return true
 	}
