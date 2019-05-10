@@ -12,6 +12,10 @@ public class tool extends item{
 	public void pickup(){
 		if (hasTool == false){
 			hasTool = true;
+			System.out.println("You picked up a " + name);
+		}
+		else{
+			System.out.println("There is nothing to pickup!");
 		}
 	}
 	public boolean getHas(){

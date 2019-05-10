@@ -26,6 +26,10 @@ public class SuitPart extends item{
 	public void pickup(){
 		if (hasPart == false){
 			hasPart = true;
+			System.out.println("You picked up your " + name);
+		}
+		else{
+			System.out.println("There is nothing to pickup!");
 		}
 	}
 	public void look(){

@@ -32,6 +32,10 @@ public class fuel extends item{
 	public void pickup(){
 		if (hasFuel == false){
 			hasFuel = true;
+			System.out.println("You picked up fuel!");
+		}
+		else{
+			System.out.println("There is nothing to pickup!");
 		}
 	}
 	public void look(){

@@ -41,6 +41,10 @@ public class ShipParts extends item{
 	public void pickup(){
 		if (hasPart == false){
 			hasPart = true;
+			System.out.println("You picked up a " + name);
+		}
+		else{
+			System.out.println("There is nothing to pickup!");
 		}
 	}
 	public void look(){
