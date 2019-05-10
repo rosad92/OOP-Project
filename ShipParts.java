@@ -28,14 +28,18 @@ public class ShipParts extends item{
 	public boolean use(){
 		//we've gotta edit this because abstraction
 		// edit this so it takes an integer for the location
-		if(hasUsed = false) {
+		if(hasUsed = true) {
 			hasUsed = true;
-			return true;
+			return false;
 		}
 		//if it is any of the locations on the ship, (as in the array in the adventure class) change hasUsed to true, and return true;
-		else {
+		else if (hasPart == true){
+			 hasUsed = true;
+			return true;
 			//if it is not a location on the ship, or if hasUsed is already true, return false;
-		return false;
+		}
+		else{
+			return false;
 		}
 	}
 	public void pickup(){
