@@ -42,6 +42,7 @@ public class Start{
 				if( adventure.currentLocation==5){
 					if( adventure.spaceman.inventory[2]==null && adventure.spaceman.inventory[3]==null &&
 					   adventure.spaceman.inventory[8]==null){
+						//this needs to be edited for encapsulation
 					   alive=false;
 					}
 				}
@@ -66,7 +67,7 @@ public class Start{
 				//leave
 				System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
 						   + "See you soon Commander.");
-					alive== false;
+					alive= false;
 				break;
 			default:
 				System.out.print("That is not a valid command");
