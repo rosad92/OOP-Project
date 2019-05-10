@@ -1,9 +1,9 @@
 
 public class Adventure {
 	private Room [] map;
-	int currentLocation;
+	private int currentLocation;
 	String nextLine= "/n";
-	Player spaceMan;
+	private Player spaceMan;
 	public Adventure(String name){
 		currentLocation=0;
 		map = new Room[10];
@@ -245,5 +245,11 @@ public class Adventure {
 			spaceMan.getItem(15).pickup();
 			spaceMan.getItem(16).pickup();
 		}
+	}
+	public int getLocation(){
+		return currentLocation;
+	}
+	public Player getPlayer(){
+		return spaceMan;
 	}
 }

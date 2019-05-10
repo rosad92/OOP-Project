@@ -10,8 +10,8 @@ public class food extends item{
 	public String getname (){
 		return name;
 	}
-	public boolean gethasFood() {
-		return haspart;
+	public boolean getHas() {
+		return hasFood;
 	}
 	public boolean gethasUsed() {
 		return hasUsed;
@@ -20,17 +20,19 @@ public class food extends item{
 		this.name = name;
 	}
 	public void sethasFood (boolean hasPart){
-		this.hasPart = hasPart;
+		this.hasFood = hasPart;
 	}
 	public void sethasUsed (boolean hasUsed){
-		this.hasUsed = hasUsed;		
+		this.hasUsed = hasUsed;	
+	}
 	public boolean use(){
 		if(hasUsed == true) {
 			return false;
 		}
-		if(hasUsed == false) {
+		else {
 			hasUsed = true;
 			return true;
+		}
 			
 		//if hasUsed is true, return false
 		//if hasUsed is false, change hasUsed to true, return true

@@ -14,6 +14,9 @@ public class tool extends item{
 			hasTool = true;
 		}
 	}
+	public boolean getHas(){
+		return hasTool;
+	}
 	public void look(){
 		System.out.println(name + " can be used to repair the ship.");
 	}

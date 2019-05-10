@@ -8,8 +8,8 @@ public class SuitPart extends item{
 	public String getname (){
 		return name;
 	}
-	public boolean gethasPart() {
-		return haspart;
+	public boolean getHas() {
+		return hasPart;
 	}
 	
 	public void setname (String name){
@@ -20,7 +20,7 @@ public class SuitPart extends item{
 	}
 		
 	public boolean use(){
-		//this will add to a total count of suitparts on
+		//todo
 		return true;
 	}
 	public void pickup(){

@@ -5,7 +5,7 @@ public class fuel extends item{
 		hasFuel = false;
 		hasUsed =false;
 	}
-	public boolean gethasFuel() {
+	public boolean getHas() {
 		return hasFuel;
 	}
 	public boolean gethasUsed() {
@@ -15,13 +15,13 @@ public class fuel extends item{
 		this.hasUsed = hasUsed;		
         }
 	public void sethasFuel (boolean hasFuel){
-		this.hasFuel = Fuel;		
+		this.hasFuel = hasFuel;		
         }
 	public boolean use(){
 		if(hasUsed == true){
 			return false;
 		}
-		if(hasUsed == false){
+		else{
 		        hasUsed = true;
 			return true;	
 		}

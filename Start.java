@@ -33,27 +33,28 @@ public class Start{
 			switch(command){
 			case("pickup"):
 				//pickup for the items in the room
+				adventure.pickup();
 				break;
-			case("1"):
+			case("north"):
 				adventure.move(1);
 				//go north
 				break;
-			case("3"):
-				if( adventure.currentLocation==5){
-					if( adventure.spaceman.inventory[2]==null && adventure.spaceman.inventory[3]==null &&
-					   adventure.spaceman.inventory[8]==null){
-						//this needs to be edited for encapsulation
-					   alive=false;
+			case("south"):
+				if( adventure.getLocation()==5){
+					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas() &&
+							adventure.getPlayer().getItem(8).getHas()){
+						//this needs to be edited for polymorphism issues
+					   alive=false;ss
 					}
 				}
 				adventure.move(3);
 				//south
 				break;
-			case("2"):
+			case("east"):
 				adventure.move(2);
 				//east
 				break;
-			case("4"):
+			case("west"):
 				adventure.move(4);
 				//west
 				break;

@@ -10,7 +10,7 @@ public class ShipParts extends item{
 	public String getname (){
 		return name;
 	}
-	public boolean gethasPart() {
+	public boolean getHas() {
 		return hasPart;
 	}
 	public boolean gethasUsed() {
@@ -25,16 +25,18 @@ public class ShipParts extends item{
 	public void sethasUsed (boolean hasUsed){
 		this.hasUsed = hasUsed;		
         }
-	public int use(){
+	public boolean use(int currentlocation){
+		//we've gotta edit this because abstraction
 		// edit this so it takes an integer for the location
-		if( currentlocation > 0 && <== 9 ) {
+		if( currentlocation > 0 && currentlocation <= 9 ) {
 			hasUsed = true;
 			return true;
 		}
 		//if it is any of the locations on the ship, (as in the array in the adventure class) change hasUsed to true, and return true;
-		if( currentlocation > 9 && < 0 || hasUsed == true) {
+		else {
 		//if it is not a location on the ship, or if hasUsed is already true, return false;
 		return false;
+		}
 	}
 	public void pickup(){
 		if (hasPart == false){
