@@ -53,6 +53,8 @@ public class Start{
 				break;
 			case ("blast off"):
 				//leave
+				System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
+						   + "See you soon Commander.");
 				break;
 			default:
 				System.out.print("That is not a valid command");
