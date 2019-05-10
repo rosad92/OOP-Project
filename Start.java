@@ -41,16 +41,17 @@ public class Start{
 				break;
 			case("south"):
 				if( adventure.getLocation()==5){
-					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas() &&
-							adventure.getPlayer().getItem(8).getHas()){
+					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas()==false &&
+							adventure.getPlayer().getItem(8).getHas()==false){
 						//this needs to be edited for polymorphism issues
 System.out.println("You have entered the planet without a space suit or flashlight! The A.S.S. remains stuck on the planet for" + newLine
 		   + "the next brave astronaut to try again.");
 					   alive=false;
 					}
-				}
+				} else{
 				adventure.move(3);
 				//south
+				}
 				break;
 			case("east"):
 				adventure.move(2);
@@ -61,7 +62,7 @@ System.out.println("You have entered the planet without a space suit or flashlig
 				//west
 				break;
 			case("use"):
-				//use
+				//use - similar to move or pickup
 				break;
 			case ("look"):
 				// look

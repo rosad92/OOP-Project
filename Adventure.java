@@ -2,7 +2,7 @@
 public class Adventure {
 	private Room [] map;
 	private int currentLocation;
-	String nextLine= "/n";
+	String nextLine= "\n";
 	private Player spaceMan;
 	public Adventure(String name){
 		currentLocation=0;
