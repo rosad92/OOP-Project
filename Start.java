@@ -7,7 +7,8 @@ public class Start{
 		Scanner input = new Scanner (System.in);
 		System.out.println("Please enter your name");
 		String name= input.next();
-	
+		Adventure adventure= new Adventure(name);
+		
 		
 
 		System.out.println("*CRASH* You're an astronaut on the Akash Space Station (A.S.S)"
@@ -33,16 +34,26 @@ public class Start{
 			case("pickup"):
 				//pickup for the items in the room
 				break;
-			case("north"):
+			case("1"):
+				adventure.move(1);
 				//go north
 				break;
-			case("south"):
+			case("3"):
+				if( adventure.currentLocation==5){
+					if( adventure.spaceman.inventory[2]==null && adventure.spaceman.inventory[3]==null &&
+					   adventure.spaceman.inventory[8]==null){
+					   alive=false;
+					}
+				}
+				adventure.move(3);
 				//south
 				break;
-			case("east"):
+			case("2"):
+				adventure.move(2);
 				//east
 				break;
-			case("west"):
+			case("4"):
+				adventure.move(4);
 				//west
 				break;
 			case("use"):
@@ -55,6 +66,7 @@ public class Start{
 				//leave
 				System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
 						   + "See you soon Commander.");
+					alive== false;
 				break;
 			default:
 				System.out.print("That is not a valid command");
