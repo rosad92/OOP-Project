@@ -43,8 +43,7 @@ public class Start{
 				if( adventure.getLocation()==5){
 					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas()==false &&
 							adventure.getPlayer().getItem(8).getHas()==false){
-						//this needs to be edited for polymorphism issues
-System.out.println("You have entered the planet without a space suit or flashlight! The A.S.S. remains stuck on the planet for" + newLine
+						System.out.println("You have entered the planet without a space suit or flashlight! The AK.S.S. remains stuck on the planet for" + newLine
 		   + "the next brave astronaut to try again.");
 					   alive=false;
 					}

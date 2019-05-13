@@ -21,7 +21,7 @@ public class fuel extends item{
 		if(hasUsed == true){
 			return false;
 		}
-		else if (hasfuel == true){
+		else if (hasFuel == true){
 		        hasUsed = true;
 			return true;	
 		}

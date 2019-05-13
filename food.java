@@ -29,7 +29,7 @@ public class food extends item{
 		if(hasUsed == true) {
 			return false;
 		}
-		else if(hasfood == true){
+		else if(hasFood == true){
 			hasUsed = true;
 			return true;
 		}

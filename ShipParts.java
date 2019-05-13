@@ -26,8 +26,6 @@ public class ShipParts extends item{
 		this.hasUsed = hasUsed;		
         }
 	public boolean use(){
-		//we've gotta edit this because abstraction
-		// edit this so it takes an integer for the location
 		if(hasUsed = true) {
 			hasUsed = true;
 			return false;
