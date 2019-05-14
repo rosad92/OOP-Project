@@ -4,3 +4,10 @@ which has been stranded on Planet X. By navigating the ship using cardinal direc
 players can find numerous items such as tools, fuel, space ship parts, ect. Once the player has collected 
 all the items and returns to the command center to use them they can blast off successfully home and 
 be able to tell their story, until the next time.
+
+List of Commands taken by the Mission Home:
+“north”, “south”, “east”, “west” to move throughout all the rooms
+“Pickup” to pick up an item
+“Use (item)” to use an item (i.e a screwdriver)
+““Look (item)” to get information about an item
+“Blastoff” wins the game, when all the items are collected
