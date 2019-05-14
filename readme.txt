@@ -11,3 +11,9 @@ List of Commands taken by the Mission Home:
 “Use (item)” to use an item (i.e a screwdriver)
 ““Look (item)” to get information about an item
 “Blastoff” wins the game, when all the items are collected
+
+The basic layout of the game map:
+
+sleeping quarters   communal area     engine room
+command center      cargo bay         airlock       sand dunes  cave
+                                      crater                    shelter
