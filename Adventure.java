@@ -62,7 +62,7 @@ public class Adventure {
 				}
 				else if (m==3){
 					System.out.println("You've entered the Command Center." +nextLine + "All items collected, explore around more.");
-				currentLocation=3;
+				currentLocation=0;
 				}		
 				else if (m==4){
 					System.out.println("You've entered an invalid entry, please try again.3");
