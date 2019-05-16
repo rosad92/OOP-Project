@@ -7,7 +7,7 @@ public class SuitPart extends item{
 		hasUsed = false;
 		hasPart = false;
 	}
-	public String getname (){
+	public String getName (){
 		return name;
 	}
 	public boolean getHas() {

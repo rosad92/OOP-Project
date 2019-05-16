@@ -1,9 +1,11 @@
 public class fuel extends item{
 	private boolean hasFuel;
 	private boolean hasUsed;
+	private String name;
 	public fuel(){
 		hasFuel = false;
 		hasUsed =false;
+		name = "fuel";
 	}
 	public boolean getHas() {
 		return hasFuel;
@@ -43,5 +45,8 @@ public class fuel extends item{
 	}
 	public void look(){
 		System.out.println("Fuel can be used to get the ship off the ground");
+	}
+	public String getName(){
+		return name;
 	}
 }

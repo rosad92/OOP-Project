@@ -27,6 +27,7 @@ public class Start{
 		
 
 		//print about starting room
+		adventure.printStart();
 		
 		do{
 			String command = input.next();
@@ -41,11 +42,14 @@ public class Start{
 				break;
 			case("south"):
 				if( adventure.getLocation()==5){
-					if( adventure.getPlayer().getItem(2).getHas()==false && adventure.getPlayer().getItem(3).getHas()==false &&
+					if( adventure.getPlayer().getItem(2).getHas()==false || adventure.getPlayer().getItem(3).getHas()==false ||
 							adventure.getPlayer().getItem(8).getHas()==false){
 						System.out.println("You have entered the planet without a space suit or flashlight! The AK.S.S. remains stuck on the planet for" + newLine
 		   + "the next brave astronaut to try again.");
 					   alive=false;
+					}
+					else{
+						adventure.move(3);
 					}
 				} else{
 				adventure.move(3);
@@ -59,18 +63,20 @@ public class Start{
 			case("west"):
 				adventure.move(4);
 				//west
-				break;
-			case("use"):
-				//use - similar to move or pickup
-				break;
 			case ("look"):
 				// look
 				break;
 			case ("blastoff"):
 				//leave
-				System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
-						   + "See you soon Commander.");
-					alive= false;
+				if(adventure.getPlayer().getItem(9).getHas()==true &&adventure.getPlayer().getItem(5).getHas()== true&&adventure.getPlayer().getItem(12).getHas()== true&&adventure.getPlayer().getItem(13).getHas() == true ){
+					System.out.println("Congrats you've saved us all. Now go home and tell your story." + newLine
+							   + "See you soon Commander.");
+						alive= false;
+				}
+				else{
+					System.out.println("You haven't repaired your ship yet, you can't leave!");
+				}
+				
 				break;
 			default:
 				System.out.print("That is not a valid command");

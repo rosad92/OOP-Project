@@ -7,7 +7,7 @@ public class food extends item{
 		hasFood = false;
 		hasUsed= false;
 	}
-	public String getname (){
+	public String getName (){
 		return name;
 	}
 	public boolean getHas() {
@@ -50,8 +50,5 @@ public class food extends item{
 	}
 	public void look(){
 		System.out.println(name + " can be used to gain energy.");
-	}
-	public String getName(){
-		return name;
 	}
 }

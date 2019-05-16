@@ -7,7 +7,7 @@ public class ShipParts extends item{
 		hasPart = false;
 		hasUsed=false;
 	}
-	public String getname (){
+	public String getName (){
 		return name;
 	}
 	public boolean getHas() {

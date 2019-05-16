@@ -34,4 +34,7 @@ public class tool extends item{
 	public void look(){
 		System.out.println(name + " can be used to repair the ship.");
 	}
+	public String getName(){
+		return name;
+	}
 }

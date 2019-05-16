@@ -36,33 +36,47 @@ public class Adventure {
 		public void move (int m){
 			if (currentLocation==0){ // Command Center
 				if(m==1){
-					System.out.println("You've entered the Sleeping Quarters." +nextLine
-					+ "I think I see a space helmet and flashlight in the distance.");
 					currentLocation=1;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(1).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(1).getName() + " and a " + spaceMan.getItem(2).getName());
+					}
+
 				}
 				else if (m==2){
-					System.out.println("You've entered the Cargo Bay." +nextLine
-					+ "I see food and the shuttle's wing! Pick it up!");
 					currentLocation=3;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(5).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(5).getName() + " and a " + spaceMan.getItem(6).getName());
+					}
+				
 				}
 				else{
-					System.out.println("You've entered an invalid entry, please try again. 1");
 					currentLocation=0;
+					System.out.println("You've entered an invalid entry, please try again. ");
 				}
 			}
 					
 			else if (currentLocation==1){ //Sleeping Quarters
 				if(m==1){
-					System.out.println("You've entered an invalid entry, please try again.2");
-				currentLocation=1;
+					currentLocation=1;
+					System.out.println("You've entered an invalid entry, please try again.");
 				}
 				else if (m==2){
-					System.out.println("You've entered the Communal Area." +nextLine + "I see a chest piece and more food, let's go get it.");
 					currentLocation=2;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(3).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(3).getName() + " and a " + spaceMan.getItem(4).getName());
+					}
+				
 				}
 				else if (m==3){
-					System.out.println("You've entered the Command Center." +nextLine + "All items collected, explore around more.");
-				currentLocation=0;
+					currentLocation=0;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(0).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(0).getName() );
+					}
+							
 				}		
 				else if (m==4){
 					System.out.println("You've entered an invalid entry, please try again.3");
@@ -75,100 +89,167 @@ public class Adventure {
 					currentLocation=2;	
 				}
 				else if (m==2){
-					System.out.println("You've entered the Engine Room. Look there over there, fuel!");
 					currentLocation=4;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(7).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(7).getName());
+					}
+				
 				}
 				else if (m==3){
-					System.out.println("You've entered the Sleeping Quarters. All items found, go explore elsewhere.");
-					currentLocation=1;
+					currentLocation=3;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(1).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(5).getName() + " and a " + spaceMan.getItem(6).getName());
+					}
+				
 				}
 				else if (m==4){
-					System.out.println("You've entered the cargo bay."+nextLine +
-					"I see food and the shuttle's wing! Pick it up!");
-					currentLocation=3;
+					currentLocation=1;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(5).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(5).getName() + " and a " + spaceMan.getItem(6).getName());
+					}
+				
 				}
 			}
 			else if (currentLocation==3){ // Cargo Bay
 				if(m==1){
-					System.out.println("You've entered the Communal Area." +nextLine + "I see a chest piece and more food, let's go get it.");
-					currentLocation=2;}
-				else if (m==2){
-					System.out.println("You've entered the Air-Lock."+nextLine
-					+ "I see the rest of the space suit, suit up before you suffocate.");
-				currentLocation=5;
+					currentLocation=2;
+					System.out.println("You've entered the " + map[currentLocation].getroomname());
+					if(spaceMan.getItem(3).getHas()==false){
+						System.out.println("There is a " + spaceMan.getItem(3).getName() + " and a " + spaceMan.getItem(4).getName());
+					}
+					
 				}
-			else if (m==3){
-				System.out.println("You've entered the Command Center."+nextLine
-					+ "you've already been here! Explore elsewhere!");
-				currentLocation=0;
+				else if (m==2){
+				currentLocation=5;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(8).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(8).getName());
+				}
+			
 				}
 			else if (m==4){
-				System.out.println("You've entered an invalid entry, please try again.5");
+				currentLocation=0;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(0).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(0).getName());
+				}
+			
+				}
+			else if (m==3){
+				System.out.println("You've entered an invalid entry, please try again.");
 				currentLocation=3;
 				}
 			}
 				
 			else if (currentLocation==4){ // Engine Room
 				if(m==1){
-				System.out.println("You've entered an invalid command, try again.6");
+				System.out.println("You've entered an invalid command, try again.");
 				currentLocation=4;}
 			else if (m==2){
-				System.out.println("You've entered an invalid command, try again.7");
+				System.out.println("You've entered an invalid command, try again.");
 				currentLocation=4;}
 			else if (m==3){		
-				System.out.println("You've entered the Air-Lock."+nextLine
-					+ "I see the rest of the space suit, suit up before you suffocate.");
-				currentLocation=5;}
+				currentLocation=5;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(8).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(8).getName());
+				}
+			
+				}
 			else if (m==4){
-				System.out.println("You've entered the Communal Area." +nextLine +"I see a chest piece and more food, let's go get it.");
-				currentLocation=2;}
+				currentLocation=2;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(3).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(3).getName() + " and a " + spaceMan.getItem(4).getName());
+				}
+				
+			}
 			}
 					
 			else if (currentLocation==5){ // Air-Lock
 				if(m==1){
-				System.out.println("You've entered the Engine Room. Look there over there, fuel!");
-				currentLocation=4;}
+				currentLocation=4;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(8).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(8).getName() );
+				}
+			}
 			else if (m==2){
-				System.out.println("You've entered an invalid command, try again.8");
+				System.out.println("You've entered an invalid command, try again.");
 				currentLocation=5;}
 			else if (m==3){
-				System.out.println("Leaving Space Ship" +nextLine
-						  +"Welcome to the Crater, I see a landing gear and tools!");
-				currentLocation=6;}
+				System.out.println("Leaving Space Ship");
+				currentLocation=6;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(9).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(9).getName() + " and a " + spaceMan.getItem(10).getName());
+				}
+			}
 			else if (m==4){
-				System.out.println("You've entered the cargo bay."+nextLine
-					+ "I see food and the shuttle's wing! Pick it up!");
-				currentLocation=3;}
+				currentLocation=3;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(5).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(5).getName() + " and a " + spaceMan.getItem(6).getName());
+				}
+				
+			}
 			}
 					
 			else if (currentLocation==6){ // Crater
 				if(m==1){
-				System.out.println("You've entered the Dunes, I see a tool and the landing gear!");
-				currentLocation=7;}		
+				currentLocation=7;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(11).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(11).getName() + " and a " + spaceMan.getItem(12).getName());
+				}
+			
+				}		
 			else if(m==2){
-				System.out.println("You've entered the shelter, I see fuel and food!");
-				currentLocation=9;}
+				currentLocation=9;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(15).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(15).getName() + " and a " + spaceMan.getItem(16).getName());
+				}
+				
+			}
 			else if(m==3){
-				System.out.println("You've entered the Air-Lock."+nextLine
-					+ "I see the rest of the space suit, suit up before you suffocate.");
-				currentLocation=5;}
+				currentLocation=5;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(8).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(8).getName());
+				}
+				
+			}
 			else if(m==4){
-				System.out.println("Invalid entry, please try again.9");
+				System.out.println("Invalid entry, please try again.");
 				currentLocation=6;}
 		}
 		else if (currentLocation==7){ // Dunes
 				if(m==1){
-				System.out.println("Invalid entry, please try again10");
+				System.out.println("Invalid entry, please try again");
 				currentLocation=7;}
 			else if(m==2){
-				System.out.println("You've entered the Cave, I spot a Tool and the Wheel!");
-				currentLocation=8;}
-			else if(m==3){
-				System.out.println("Invalid entry, please try again.11");
-				currentLocation=7;}
+				currentLocation=8;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(13).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(13).getName() + " and a " + spaceMan.getItem(14).getName());
+				}
+			}
 			else if(m==4){
-				System.out.println("Welcome to the Crater, I see a landing gear and tools!");
-				currentLocation=6;}
+				System.out.println("Invalid entry, please try again.");
+				currentLocation=7;
+				}
+			else if(m==3){
+				currentLocation=6;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(9).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(9).getName() + " and a " + spaceMan.getItem(10).getName());
+				}
+				
+			}
 		}
 
 		else if (currentLocation==8){ // Cave
@@ -179,16 +260,31 @@ public class Adventure {
 				System.out.println("Invalid entry, please try again");
 				currentLocation=8;}
 			else if(m==3){
-				System.out.println("You've enther the Shelter, I see fuel and food in the distance!");
-				currentLocation=9;}
+				currentLocation=9;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(15).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(15).getName() + " and a " + spaceMan.getItem(16).getName());
+				}
+				
+			}
 			else if(m==4){
-				System.out.println("You've entered the Dunes, I see a tool and the landing gear!");
-				currentLocation=7;}
+				currentLocation=7;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(11).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(11).getName() + " and a " + spaceMan.getItem(12).getName());
+				}
+				
+			}
 		}
 		else if (currentLocation==9){ // Shelter
 				if(m==1){
-				System.out.println("You've entered the Cave, I spot a Tool and the Wheel!");
-				currentLocation=8;}
+				currentLocation=8;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(13).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(13).getName() + " and a " + spaceMan.getItem(14).getName());
+				}
+			
+				}
 			else if(m==2){
 				System.out.println("Invalid entry, please try again.");
 				currentLocation=9;}
@@ -196,8 +292,13 @@ public class Adventure {
 				System.out.println("Invalid entry, please try again.");
 				currentLocation=8;}
 			else if(m==4){
-				System.out.println("Welcome to the Crater, I see a landing gear and tools!");
-				currentLocation=6;}
+				currentLocation=6;
+				System.out.println("You've entered the " + map[currentLocation].getroomname());
+				if(spaceMan.getItem(9).getHas()==false){
+					System.out.println("There is a " + spaceMan.getItem(9).getName() + " and a " + spaceMan.getItem(10).getName());
+				}
+				
+			}
 		}
 	}
 	public void pickup(){
@@ -244,6 +345,12 @@ public class Adventure {
 	}
 	public Player getPlayer(){
 		return spaceMan;
+	}
+	public void printStart(){
+		System.out.println("You've entered the " + map[0].getroomname());
+		if(spaceMan.getItem(0).getHas()==false){
+			System.out.println("There is a " + spaceMan.getItem(0).getName());
+		}
 	}
 
 }
